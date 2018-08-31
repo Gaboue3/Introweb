@@ -1,0 +1,19 @@
+body{
+    font-family:georgia, serif;
+    background: center no-repeat url("../Image/fond3.jpg");
+}
+h1 {
+    color:blue;
+    border: 1px solid black;
+    text-align: center;
+}
+    p{
+    color:red;
+    font-size: larger;
+    }
+
+li {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: greenyellow;
+}
