@@ -4,7 +4,7 @@ body{
 
 }
 h1 {
-    color:blue;
+    color: greenyellow;
     border: 1px solid black;
     text-align: center;
 }
@@ -20,5 +20,7 @@ li {
 
 }
 
-
+a {
+    color: greenyellow;
+}
 
