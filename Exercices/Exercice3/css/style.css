@@ -11,9 +11,31 @@ h1{
 
 	border: 2px solid darkblue;
 	padding-left: 10px;
+    float: left;
+    width: 25%;
+
+
 }
 .box2 {
   border: 2px solid red;
+    margin-left: 263px;
+    padding-left: 10px;
+    padding-right: 8px;
+    margin-right: 10px;
+
+
+}
+.sampletext {
+    float: left;
+    margin-top: 0;
+
 }
 
+img {
+    padding-left: 234px;
+    border: 1px solid black;
+    padding-right: 234px;
+    padding-top: 3px;
+    padding-bottom: 5px;
 
+}
