@@ -8,26 +8,38 @@
 
 nav
 {
-	width : 150px ;
+	width : 15% ;
 	border : 1px solid blue ;
 	display: inline-block;
-	position: relative;
+	float: left;
 	margin-left: 0;
 	text-align: left;
+	margin-right: 0;
 
 }
 section
 {
-	border : 1px solid blue ;
-	width: 55%;
-	display: inline-block;
-	text-align: center;
-	margin-left: 50px;
-	vertical-align: top;
-	position: relative;
-	margin-right: 200px;
 
 }
+
+#text1
+{
+	border : 1px solid blue ;
+	width: 40%;
+	display: inline-block;
+	text-align: center;
+	margin-left: 0;
+}
+
+#text2
+{
+	border : 1px solid blue ;
+	display: inline-block;
+	width: 30%;
+	margin-left: 2%;
+
+}
+
 
 
 
