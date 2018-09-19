@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>FORMULAIRE</title>
+	<meta  charset="UTF-8">
+	<meta name="title" content="Titre de la page">
+	<meta name="description" content="description de la page">
+	<meta name="author" content="prenon NOM">
+	<meta name="keywords" content="mots-clé1, mots-clé2, ...">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet " href ="CSS/Style.css"/>
+</head>
+<body>
+	<div class="form-style">
+		<div class="Entete">Entrez les informations du membre</div>
+
+		<form action="" method="get">
+
+			<div class="champtext">
+					<label for="Nom">Nom*</label>
+				<input type="text" name="txtNom" value="" />
+				<br><br>
+					<label>Prénom*  </label>
+				<input type="text" name="txtPrenom *" value="" />
+				<br><br>
+					<label>Adresse </label>
+				<input type="text" name="txtAddresse *" value="" placeholder="999 rue"/>
+				<br><br>
+					<label>Ville </label>
+				<input type="text" name="txtVille *" value="" />
+				<br><br>
+					<label>Téléphone * </label>
+				<input type="number" name="numTéléphone" value="" />
+				<br><br>
+					<label>Date d'inscription *  </label>
+				<input type="number" name="numinscripton " value="" />
+				<br><br>
+					<label>Date de fin </label>
+				<input type="number" name="numFin *" value="" />
+				<br><br>
+			</div>
+			<p>
+				<label>Sexe <input type="radio" value="Masculin" name="radsex" id="m"  /> </label>
+				<label for="m"> Masculin </label>
+				<input type="radio" value="Feminin" name="radsex" id="f">
+				<label for="f">Feminim</label>
+			</p>
+			<div>
+				<label>Choix</label>
+				<select name="Maliste">
+					<option value="typecarte">American Express</option>
+					<option value="typecarte">Masteracard</option>
+					<option value="typecarte">Visa</option>
+				</select>
+			</div>
+
+
+		</form>
+	</div>
+
+</body>
+</html>
