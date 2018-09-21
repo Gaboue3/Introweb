@@ -11,27 +11,37 @@
     font-size: 15px;
     padding-bottom: 3px;
 }
-.champtext
-{
-
-}
-input
- {
-    position: relative;
-    left: 45px;
-    padding-right: 30px;
 
 
- }
 label
 {
-width: 120px;
+width: 165px;
     display: inline-block;
 
 }
-select
-{
-    position: relative;
-    left: 200px;
-    padding-right: 30px;
+
+#colorstar {
+    display: inline-block;
+    color: red;
 }
+.inputwidth
+{
+    display: inline-block;
+    width: 300px;
+}
+.telephone
+{
+    width: 137px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+

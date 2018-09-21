@@ -17,43 +17,48 @@
 		<form action="" method="get">
 
 			<div class="champtext">
-					<label for="Nom">Nom*</label>
-				<input type="text" name="txtNom" value="" />
+					<label>Nom<div id="colorstar">*</div></label>
+				<input type="text" name="txtNom" value=""class="inputwidth" />
 				<br><br>
-					<label>Prénom*  </label>
-				<input type="text" name="txtPrenom *" value="" />
+					<label>Prénom <div id="colorstar">*</div>  </label>
+				<input type="text" name="txtPrenom *" value=""class="inputwidth" />
 				<br><br>
 					<label>Adresse </label>
-				<input type="text" name="txtAddresse *" value="" placeholder="999 rue"/>
+				<input type="text" name="txtAddresse *" value="" placeholder="999 rue"class="inputwidth"/>
 				<br><br>
 					<label>Ville </label>
-				<input type="text" name="txtVille *" value="" />
+				<input type="text" name="txtVille *" value="" class="inputwidth"/>
 				<br><br>
-					<label>Téléphone * </label>
-				<input type="number" name="numTéléphone" value="" />
+					<label>Téléphone <div id="colorstar">*</div> </label>
+				<input type="number" name="numTéléphone" value="" placeholder="999-999-9999" class="telephone" />
 				<br><br>
-					<label>Date d'inscription *  </label>
-				<input type="number" name="numinscripton " value="" />
+					<label>Date d'inscription <div id="colorstar">*</div>  </label>
+				<input type="date" name="numinscripton " value="" placeholder="aaaa/mm/jj" />
 				<br><br>
 					<label>Date de fin </label>
-				<input type="number" name="numFin *" value="" />
+				<input type="date" name="numFin *" value="" placeholder="aaaa/mm/jj"/>
 				<br><br>
 			</div>
 			<p>
-				<label>Sexe <input type="radio" value="Masculin" name="radsex" id="m"  /> </label>
-				<label for="m"> Masculin </label>
-				<input type="radio" value="Feminin" name="radsex" id="f">
-				<label for="f">Feminim</label>
+				<label>Sexe</label>
+				<input id="masculin" type="radio" value="Masculin" name="radsex" id="m"  />Masculin
+				<input type="radio" value="Feminin" name="radsex" id="f">Feminim
 			</p>
-			<div>
-				<label>Choix</label>
+							<label>Choix</label>
 				<select name="Maliste">
 					<option value="typecarte">American Express</option>
 					<option value="typecarte">Masteracard</option>
 					<option value="typecarte">Visa</option>
-				</select>
-			</div>
+				</select><br><br>
 
+			<label>Carte de crédit <div id="colorstar">*</div> </label>
+			<input type="number" name="numcartecrédit" value="" placeholder="9999 9999 9999 9999" class="telephone"/><br><br>
+			<label> Mot de passe <div id="colorstar">*</div> </label>
+			<input type="text" name="motdepasse" value=""class="inputwidth"><br><br>
+			<label> Courriel </label>
+			<input type="text" name="addressecourriel" value="" placeholder="aaaaaa@aaaa.aaa"class="inputwidth"><br><br>
+			<label></label>
+			<input type="submit" name="envoyer" ><input type="reset" name="reintaliser">
 
 		</form>
 	</div>
