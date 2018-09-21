@@ -20,7 +20,7 @@ width: 165px;
 
 }
 
-#colorstar {
+.colorstar {
     display: inline-block;
     color: red;
 }
