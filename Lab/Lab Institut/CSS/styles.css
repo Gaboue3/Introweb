@@ -199,4 +199,18 @@ footer p {
 	position: relative;
 	margin-left: 50px;
 }
+tr
+{
+	width: 400px;
+	border: black 1px solid;
+}
+td{
+	width: 90px;
 
+}
+table
+{
+	border-collapse: collapse;
+	margin-left: 75px;
+
+}
