@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<title>laboratoire</title>
+<title>Acceuil</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="laboratoire Institut des sciences de la mer de Rimousky">
 	<meta name="author" content="Lucie Fortin">
@@ -16,8 +16,9 @@
 		<header>
 		<!--nav_mu-->
 		<div id="bloc_logo">
-			<img src="img/logo.png" width="256" height="56" alt="logo de institut"></div>
-		<div id="nav_mu">
+			<img src="img/logo.PNG" width="256" height="56" alt="logo de institut"></div>
+
+			<div id="nav_mu">
 			<ul><li><a href="#" target="_blank">| Jeux</a></li><li><a href="#" target="_blank">| Sondage</a></li><li><a href="#" target="_blank">| Nous joindre</a></li></ul>
 		</div>
 		<!--Fin nav_mu-->
@@ -35,31 +36,27 @@
 		<!--section-->
 		<section>
 			<!--Nav-->
-			<nav>
-			<ul><li><a href="#" target="_blank">Accueil</a></li><li><a href="#" target="_blank">| Formation</a></li><li><a href="#" target="_blank">| Membres</a></li><li><a href="#" target="_blank">| Services</a></li></ul>
-			</nav>
-			<!--fin Nav-->
-			<h1>Institut des sciences de la mer de Rimousky</h1>
-			<!--coordonnées-->
-			<p>
-			C.P. 221<br>
-			Baie-Comeau (Québec)<br>
-			G5C2S9<br>
-			</p>
-			<!--téléphone et courriel-->
-			<p>
-			<b>Téléphone:</b>(418)724-1650<br>
-			<b>Télécopie:</b>(418)724-1846<br>
-			<b>Tél.sans frais:</b>1 800 511-3382<br>
-			<a href="mailto:institutsciencerimousky@globetrotter.net">institutsciencerimousky@globetrotter.net</a>
-			</p>
-			<p>
-			<!--heure d'ouverture-->
-			<b>Heures d'ouverture:</b>8 h 30 à 16 h 30 du lundi au vendredi.
-			</p>
+	<h1>Entrer les informations du membre</h1>
+			<label class="labelacceuil">Nom<div class="couleur">*</div></label>
+				<input class="inputtxt"type="text" name="nomtxt"><br>
+			<label class="labelacceuil">Prénom<div class="couleur">*</div></label>
+				<input class="inputtxt"type="text" name="nomtxt"><br>
+			<label class="labelacceuil">Addresse courriel</label>
+				<input class="inputtxt"type="text" name="nomtxt"><br>
+			<label class="labelacceuil">Téléphone<div class="couleur">*</div></label>
+				<input id="telephone"type="tel" name="numtelephone" placeholder="(418) 917-1684"><br>
+			<label id="commentaireslabel">Commentaire</label>
+				<textarea name="commentaires" cols="40"rows="8"placeholder="Écriver vos commentaires"></textarea> <br>
+			<label class="labelacceuil">Catégorie</label>
+				<select name="ListeCatgorie">
+					<option value="typecarte">Étudiant</option>
+					<option value="typecarte">Adulte</option>
+					<option value="typecarte">Retraité</option>
+				</select><br>
+			<input type="submit" name="bouteonenvoyer" id="bouton"> <input type="reset" name="boutonreset" id="bouton2">
+
 			<!--ligne de séparation-->
 			<hr>
-
 		</section>
 		<!--fin section-->
 		</container>
@@ -70,7 +67,7 @@
 
 			<p>&copy 2018 <b>Institut des sciences de la mer de Rimousky.</b> Tous droits réservés.</p> 
 			<p>Ce site est optimisé pour 1200x1080px</p>
-		</br>
+		<br>
 		</footer>
 		<!--fin footer-->
 	</main>

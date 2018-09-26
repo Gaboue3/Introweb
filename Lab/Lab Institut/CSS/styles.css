@@ -1,6 +1,5 @@
-/*Définit l'encodate des caractères*/
 @charset"utf-8";
-
+/*Définit l'encodate des caractères(ligne en haut)*/
 /*Generaux*/
 body {
 	background:url(../img/fond.jpg);
@@ -31,7 +30,7 @@ main {
 }
 #nav_mu ul {
 	text-align:right;
-	margin:50px 7px 5px 0px;
+	margin:50px 7px 5px 0;
 }
 /*nav liens*/
 #nav_mu a {
@@ -60,7 +59,7 @@ nav {
 }
 nav ul {
 	padding:5px;
-	margin:0px 0px 0px 40px;
+	margin:0 0 0 40px;
 }
 nav ul li {
 	display:inline;
@@ -96,6 +95,7 @@ section {
 	background:white;
 	float:left;
 	width:884px;
+
 }
 section h1 {
 	color:#b1cb97;
@@ -103,7 +103,7 @@ section h1 {
 	margin-left:50px; 
 }
 section p {
-	margin:30px 0px 40px 50px;
+	margin:30px 0 40px 50px;
 }
 /*liens courriel*/
 section a:link {
@@ -155,5 +155,48 @@ footer p {
 	text-align:center;
 
 }
+.labelacceuil
+{
+	display: inline-block;
+	width: 200px;
+	margin-left: 50px;
+	margin-bottom: 14px;
+}
+.inputtxt
+{
+	display: inline-block;
+	width: 250px;
+}
+#telephone
+{
+	display: inline-block;
+	width: 100px;
+}
 
+#bouton
+{
+	margin-left: 50px;
+	display: inline-block;
+	width:260px;
+	height: 26px;
+}
+#bouton2
+{
+	display: inline-block;
+	width:260px;
+	height: 26px;
+}
+.couleur
+{
+	display: inline-block;
+	color: red;
+}
+#commentaireslabel
+{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	position: relative;
+	margin-left: 50px;
+}
 
