@@ -214,3 +214,7 @@ table
 	margin-left: 75px;
 
 }
+thead
+{
+	column-span: all;
+}
