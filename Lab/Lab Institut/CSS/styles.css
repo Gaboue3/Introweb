@@ -205,16 +205,12 @@ tr
 	border: black 1px solid;
 }
 td{
-	width: 90px;
-
+	width: 100px;
+	border: black 1px solid;
 }
 table
 {
 	border-collapse: collapse;
 	margin-left: 75px;
 
-}
-thead
-{
-	column-span: all;
 }
