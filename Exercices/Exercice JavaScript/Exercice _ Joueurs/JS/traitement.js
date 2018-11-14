@@ -31,18 +31,31 @@ function debloquerBoutons() {
 }
 function btnMoy_onclick()
 {
+    var moy;
+      moy=calculerMoy();
+      document.getElementById("lblReponse").innerHTML="La moyenne est de "+moy;
+}
+function calculerMoy()
+{
     var moy,i;
     moy=0;
-  for(i=0;i<4;i++)
-  {
-      moy+=tabScore[i]/4;
-  }
-      document.getElementById("lblReponse").innerHTML="La moyenne est de "+moy;
+    for(i=0;i<4;i++)
+    {
+        moy+=tabScore[i]/4;
+    }
+    return moy;
 }
 function btnMeilleur_onclick()
 {
+    var nomJ,res;
+    res=tabScore[calculerMeilleur()];
+    nomJ=tabNom[calculerMeilleur()];
+    document.getElementById("lblReponse").innerHTML="Le plus grand nombre est "+res+" accomplie par "+nomJ;
+}
+function calculerMeilleur()
+{
+    var i,nomJ,res;
     res=0;
-    var i,nomJ;
     for(i=0;i<4;i++)
     {
         if(tabScore[i]>res)
@@ -51,13 +64,19 @@ function btnMeilleur_onclick()
             nomJ=tabNom[i];
         }
     }
-    document.getElementById("lblReponse").innerHTML="Le plus grand nombre est "+res+" accomplie par "+nomJ;
+    return i;
 }
-
 function btnPire_onclick()
 {
+    var nomJ,res;
+    nomJ=tabNom[calculerPire()];
+    res=tabScore[calculerPire()];
+    document.getElementById("lblReponse").innerHTML="Le plus petit nombre est "+res+" accomplie par "+nomJ;
+}
+function calculerPire()
+{
+    var i,nomJ,res;
     res=99999999999999999;
-    var i,nomJ;
     for(i=0;i<4;i++)
     {
         if(tabScore[i]<res)
@@ -66,8 +85,7 @@ function btnPire_onclick()
             nomJ=tabNom[i];
         }
     }
-    document.getElementById("lblReponse").innerHTML="Le plus petit nombre est "+res+" accomplie par "+nomJ;
-
+    return i;
 }
 function btnRechercher_onclick()
 {
