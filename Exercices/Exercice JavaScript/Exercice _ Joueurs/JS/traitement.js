@@ -21,7 +21,7 @@ function btnAjouter_onclick()
 }
 
 function debloquerBoutons() {
-    if (cptJoueur == 3) {
+    if (cptJoueur === 3) {
         document.getElementById("btnRechercher").disabled = false;
         document.getElementById("btnTrouverMoy").disabled = false;
         document.getElementById("btnTrouverMeilleur").disabled = false;
@@ -93,9 +93,9 @@ function btnRechercher_onclick()
     nomSaisi=document.getElementById("txtNom").value;
     i=0;
     trouve=false;
-    while(trouve==false&&i<4)
+    while(trouve===false&&i<4)
     {
-        if(nomSaisi==tabNom[i])
+        if(nomSaisi===tabNom[i])
         {
             resu=tabScore[i];
             nomRes=tabNom[i];
@@ -106,7 +106,7 @@ function btnRechercher_onclick()
             i++;
         }
     }
-    if(trouve==true)
+    if(trouve===true)
     {
         document.getElementById("lblReponse").innerHTML="Le score de "+nomRes+" est de "+resu;
     }
