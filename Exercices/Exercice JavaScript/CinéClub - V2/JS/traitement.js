@@ -45,5 +45,30 @@ else
     coutFinale=prixBase;
 }
 
-console.log("Un billet du "+temps+" pour un spectateur de "+ageSaisi+" ans coute $"+ coutFinale+" pour le film "+film);
+document.getElementById("lblMessage").innerHTML="Un billet du "+temps+" pour un spectateur de "+ageSaisi+" ans coute $"+ coutFinale+" pour le film "+film;
+}
+
+function chgLstFilm_onchange()
+{
+        var img;
+    img=document.getElementById("lstOptions").value;
+  if(img==="Au Poste!")
+    {
+     document.getElementById("imgAFficher").src="auposte";
+
+    }
+    else if(img==="Colette")
+  {
+      document.getElementById("imgAFficher").src="/img/v1.bTsxMjc5MTI0NDtqOzE3ODc4OzEyMDA7NDA1MDs2MDAw";
+
+  }
+  else if(img==="Halloween")
+  {
+      document.getElementById("imgAFficher").src="halloween";
+  }
+  else if(img=="La religieuse")
+  {
+      document.getElementById("imgAFficher").src="/img/re;igieuse";
+  }
+
 }
