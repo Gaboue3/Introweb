@@ -8,11 +8,22 @@ function btnCalculer_onclick()
 }
 function validerChampsObligatoire()
 {
+    tableauId= Array(document.getElementById("txtNbre1").name,document.getElementById("txtNbre2").name,document.getElementById("txtOperateur").name);
+    var valide,i,compteur;
     valide=false;
-    if(valideExiste("txtNbre1")===true && valideExiste("txtNbre2")===true && valideExiste("txtOperateur")===true)
+    compteur=0;
+    for(i=0;i<3;i++)
     {
-        valide=true;
+        if(valideExiste(tableauId[i])===true )
+        {
+            compteur++;
+        }
+        if(compteur===3)
+        {
+            valide=true;
+        }
     }
+
     return valide;
 }
 function valideExiste(idInput)
@@ -31,7 +42,7 @@ function valideExiste(idInput)
 }
 function saisir()
 {
-    var result;
+
     var Nbre1,Nbre2,Operateur,result;
     Nbre1=parseInt(document.getElementById("txtNbre1").value);
     Nbre2=parseInt(document.getElementById("txtNbre2").value);

@@ -8,7 +8,7 @@ function btnCalculer_onclick()
 }
 function validerChampsObligatoire()
 {
-    valide=false;
+   var valide=false;
     if(valideExiste("txtNbre1")===true && valideExiste("txtNbre2")===true && valideExiste("txtOperateur")===true)
     {
         valide=true;
@@ -17,7 +17,7 @@ function validerChampsObligatoire()
 }
 function valideExiste(idInput)
 {
-    valide=false;
+   var valide=false;
     if(document.getElementById(idInput).value==="")
     {
         document.getElementById(idInput).style.backgroundColor = "red";
