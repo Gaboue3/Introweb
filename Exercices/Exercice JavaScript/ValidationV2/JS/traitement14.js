@@ -18,10 +18,10 @@ function validerChampsObligatoire()
         {
             compteur++;
         }
-        if(compteur===3)
-        {
-            valide=true;
-        }
+    }
+    if(compteur===3)
+    {
+        valide=true;
     }
 
     return valide;

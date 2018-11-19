@@ -1,8 +1,13 @@
 var lstNom, NbreJour, CoutSupp, cout, race, couttot, affiche, tauxHoraire, nbreHeures, vet, somme;
-function btnCalculer_onclick() {
-
-
-
+function btnCalculer_onclick()
+{
+    if(varifierChampsObligatoire()===true)
+    {
+        saisir();
+    }
+}
+function saisir()
+{
     lstNom = document.getElementById("lstVeterinaire").value;
     NbreJour = parseInt(document.getElementById("txtNbreJours").value);
     nbreHeures = parseInt(document.getElementById("txtNbreHeures").value);
@@ -13,7 +18,34 @@ function btnCalculer_onclick() {
     vet = tauxHoraire * nbreHeures;
     afficherLesTrucs();
 
-
+}
+function varifierChampsObligatoire()
+{
+   var tabNomID=new Array("txtNbreJours","txtNbreHeures"),valide,i;
+    valide=true;
+    for(i=0;i<2;i++)
+    {
+        if(valideExiste(tabNomID[i])===false)
+        {
+            valide=false;
+        }
+    }
+    return valide;
+}
+function valideExiste(nomId)
+{
+    var valide;
+    valide=false;
+    if(document.getElementById(nomId).value==="")
+    {
+        document.getElementById(nomId).style.backgroundColor="red";
+    }
+    else
+    {
+        document.getElementById(nomId).style.backgroundColor="white";
+        valide=true;
+    }
+    return valide;
 }
 function radImg1_onclick()
 {
@@ -64,6 +96,8 @@ function calculerRabais()
     else {
         couttot = (NbreJour * cout + CoutSupp) * 0.85;
     }
+    somme = couttot + vet;
+    return somme;
 }
 function calculerSalaireToutBib()
 {
@@ -87,7 +121,7 @@ function afficherLesTrucs()
 {
     document.getElementById("lblMessage").innerHTML = " Le montant de garde pour votre " + race + " est de " + couttot.toFixed(2) + " pour " + NbreJour + " jours " + affiche + ".";
     document.getElementById("lblMessage2").innerHTML = "Le vétérinaire responsable est " + lstNom + ". Le cout du veterinaire est de: " + vet + "$.";
-    somme = couttot + vet;
+
     document.getElementById("lblMessage3").innerHTML = "Le cout total est de: " + somme.toFixed(2);
 }
 
